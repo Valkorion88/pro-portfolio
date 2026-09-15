@@ -29,6 +29,7 @@ section {
 
 .container {
   padding: 50px 0;
+  width: 100%;
 }
 
 .row {
@@ -61,13 +62,39 @@ section {
   color: #6b0303 !important;
 }
 
+.link__hover-effect {
+  position: relative;
+}
 
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after {
+  background-color: #fff;
+}
+
+.link__hover-effect--black:after {
+  background-color: #242424;
+}
+
+.link__hover-effect:hover:after {
+  left: 0;
+  width: 100%;
+}
 
 /* 
 
-    Landing Page
+    LANDING PAGE
 
 */
+
 #landing-page {
   min-height: 100vh;
 }
@@ -156,7 +183,7 @@ section {
 
 /* 
 
-    Navigation
+    NAVIGATION
 
 */
 
@@ -196,7 +223,7 @@ nav {
 
 /* 
 
-    Projects
+    PROJECTS
 
 */
 
@@ -208,7 +235,7 @@ nav {
 
 .project__img {
   width: 100%;
-  transition: all 300ms ease;
+  transition: all 600ms ease;
 }
 
 .project__wrapper {
@@ -271,4 +298,60 @@ nav {
 
 .project__description--sub-title {
   margin: 8px;
+}
+
+/* 
+
+    FOOTER
+      
+*/
+
+footer {
+  background-color: #242424;
+  display: flex;
+  padding: 1% 0;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__anchor {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.footer__logo--img {
+  width: 120px;
+  filter: brightness(1.25);
+}
+
+.footer__logo--popper {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  font-weight: 700;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.footer__anchor:hover .footer__logo--popper {
+  color: white;
+  transform: translateX(60px);
+  opacity: 1;
+}
+
+.footer__social--list {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0 20px 0;
+}
+
+.footer__social--link,
+.footer__copyright {
+  color: white;
 }
