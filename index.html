@@ -74,6 +74,64 @@
     <a href="#projects" class="scroll">
       <div class="scroll__icon click"></div>
     </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+        <p class="modal__para">
+          I'm a 38 year-old <b class="highlight__color">frontend software engineer</b> that has a passion for learning and developing websites with wonderful <b class="highlight__color">user experiences.</b>
+          <br>
+          I am currently working through the Frontend Simplified Boot Camp working through new and increasingly difficult challenges every day. I've already gotten a substantial amount of <b class="highlight__color">knowledge</b> from the course and will continue gaining <b class="highlight__color">experience</b> as I move forward.
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Html-1.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="">
+            <span class="language__name">HTML</span>  
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStLmLKNuPsYD2EDFS0S2GxqiHWvrBjw0KxO_KvsW3ENAqhE8sQfTKuLWQ&s=10" alt="">
+            <span class="language__name">CSS</span>  
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="">
+            <span class="language__name">JavaScript</span>  
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="" alt="">
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h4 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h4>
+        <form id="contact__form" action="">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input text__area" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">Send it my way</button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fa-solid fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking with you soon.
+        </div>
+      </div>
+      <i class="fas fa-times modal__exit click"></i>
+    </div>
   </section>
   <section id="projects">
     <div class="container">
