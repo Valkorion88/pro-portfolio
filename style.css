@@ -28,7 +28,7 @@ button {
 }
 
 section {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(218, 203, 154);
   transition: all 300ms ease;
 }
 
@@ -50,7 +50,7 @@ section {
 
 .input:hover,
 .text__area:hover {
-  border-color: rgb(138, 92, 92);
+  border-color: rgb(218, 203, 154);
 }
 
 .input:focus {
@@ -176,6 +176,7 @@ nav,
 .dark-theme .mail__btn {
   filter: invert();
 }
+
 
 /* 
 
