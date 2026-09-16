@@ -186,6 +186,7 @@ nav,
 
 #landing-page {
   min-height: 100vh;
+  touch-action: pan-y;
 }
 
 .header {
