@@ -199,6 +199,10 @@ nav,
   padding: 0 30px;
 }
 
+.header__content {
+  z-index: 1;
+}
+
 .header__para {
   font-size: 24px;
   line-height: 2;
@@ -707,6 +711,10 @@ footer {
   .modal__half {
     width: 100%;
   }
+  .shape--3,
+  .shape--4 {
+    visibility: hidden;
+  }
 }
 
 
@@ -740,5 +748,10 @@ footer {
   }
   .modal__half {
     padding: 40px;
+  }
+  .shape--3,
+  .shape--4,
+  .shape--5 {
+    visibility: hidden;
   }
 }
